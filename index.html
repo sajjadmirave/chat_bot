@@ -37,17 +37,33 @@
           <span style="color: #ff7675">Offline</span>
         </div>
       </nav>
+      <br />
+      <!-- user and bot message -->
+      <div class="messages">
+        <!-- user say -->
+        <h6 class="pe-1 userr">
+          <span
+            id="user"
+            style="background-color: #2ed573; border-radius: 18px; padding: 5px"
+            >You Say:
+          </span>
+        </h6>
+        <br />
+        <!-- bot say -->
+        <h6 class="carl ps-1">
+          <span
+            id="carl"
+            style="background-color: #a4b0be; border-radius: 18px; padding: 5px"
+            >Carl Say:
+          </span>
+        </h6>
+      </div>
 
-      <div class="input-area">
-        <div class="input-box">
-          <input
-            type="text"
-            
-            placeholder="Write a message"
-          />
-          <!-- the send icon -->
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
+      <!-- create the input box -->
+      <div class="input-box">
+        <input type="text" placeholder="Write a message" id="input" />
+        <!-- the send icon -->
+        <i class="fa-solid fa-paper-plane" onclick="send()"></i>
       </div>
     </div>
 

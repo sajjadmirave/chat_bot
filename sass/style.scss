@@ -50,9 +50,14 @@ body {
       padding-right: 9px;
     }
   }
-}
 
-// .input-area {
-//   position: absolute;
-//   bottom: 0;
-// }
+  // messeges
+  .messages {
+    margin-top: 200px;
+
+    .userr {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

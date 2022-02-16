@@ -39,3 +39,8 @@ body {
       position: absolute;
       cursor: pointer;
       padding-right: 9px; }
+  .form-area .messages {
+    margin-top: 200px; }
+    .form-area .messages .userr {
+      position: absolute;
+      right: 0; }
