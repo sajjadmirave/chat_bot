@@ -1,0 +1,15 @@
+@mixin profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+@mixin radius-setting-top {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+@mixin radius-setting-bottom {
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
