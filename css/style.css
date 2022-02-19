@@ -44,3 +44,6 @@ body {
     .form-area .messages .userr {
       position: absolute;
       right: 0; }
+
+.audios {
+  display: none; }

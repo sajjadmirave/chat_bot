@@ -34,10 +34,55 @@
         <!-- the nav bar text (profile) -->
         <div class="profile-text">
           <h6 class="text-white">Carl</h6>
-          <span style="color: #ff7675">Offline</span>
+          <span id="seen" style="color: #ff7675">Offline</span>
         </div>
       </nav>
-      <br />
+
+      <!-- ! create the alert  -->
+      <div
+        class="alert alert-dismissible position"
+        style="background-color: #48dbfb; color: white; border-radius: 20px"
+      >
+        <h6>
+          Say Hello <br />
+          Say
+          <span class="text-danger" style="cursor: pointer" onclick="Help()"
+            >//Help</span
+          >
+          if you lost
+        </h6>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+      <!--  ! **** -->
+
+      <div class="audio-data" id="audio-data">
+        <div
+          class="audios d-flex justify-content-center container align-items-center"
+          style="
+            width: 50px;
+            height: 30px;
+            background: #ffeaa7;
+            border-radius: 30px;
+          "
+        >
+          <!--  style for audio icon -->
+          <style>
+            #audio-data {
+              display: none;
+            }
+            .audio {
+              cursor: pointer;
+            }
+          </style>
+          <i class="fa-solid audio fa-play pe-3" onclick="PlayMusic()"></i>
+          <i class="fa-solid audio fa-pause" onclick="PauseMusic()"></i>
+        </div>
+      </div>
+
       <!-- user and bot message -->
       <div class="messages">
         <!-- user say -->
@@ -48,7 +93,7 @@
             >You Say:
           </span>
         </h6>
-        <br />
+        <br /><br />
         <!-- bot say -->
         <h6 class="carl ps-1">
           <span
@@ -69,6 +114,7 @@
 
     <script src="js/function.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/variable.js"></script>
     <script
       src="https://kit.fontawesome.com/e3e7fc892f.js"
       crossorigin="anonymous"
@@ -82,6 +128,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <style>
+      .music-list{
+        display: none;
+      }
+    </style>
+    <div class="music-list">
+      <audio id="music1" src="./music/music1.mp3"></audio>
+    </div>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
