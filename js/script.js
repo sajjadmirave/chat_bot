@@ -26,7 +26,7 @@ function send() {
       break;
 
     case "music":
-      play();
+      showicon();
       break;
 
 

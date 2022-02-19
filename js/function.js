@@ -25,7 +25,7 @@ function offline() {
   document.getElementById("carl").innerHTML = "Im sad😞";
 }
 
-function play() {
+function showicon() {
   document.getElementById("audio-data").style.display = "block";
   document.getElementById("audio-data").style.marginTop = "15px";
 }
